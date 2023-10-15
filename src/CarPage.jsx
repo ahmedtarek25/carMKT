@@ -43,6 +43,8 @@ export function CarPage() {
         document.title = car.make + " " + car.model + " " + car.year
     })
 
+    const url = '/u/' + car.listedBy
+
     return (<div className="container-car-page">
         {getCar() == null ? <Navigate to='/' /> : ''}
         <div className="info-container">
@@ -51,7 +53,7 @@ export function CarPage() {
             </div>
             <div className="car-info-container">
                 <h1 className='car-title'>{car.make} {car.model} {car.year}</h1>
-                <div className='user'><FaUserCircle color='#646262' /><h3>listed by <Link className='link'><span title='View user profile' style={{color: 'white'}}>{car.listedBy}</span></Link></h3></div>
+                <div className='user'><FaUserCircle color='#646262' /><h3>listed by <Link className='link' to={url}><span title='View user profile' style={{color: 'white'}}>{car.listedBy}</span></Link></h3></div>
                 <div className='car-description'>
                     <h1 className='car-description-title'>Description</h1>
                     <div className='description-container'>

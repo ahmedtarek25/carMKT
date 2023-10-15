@@ -5,6 +5,7 @@ import Home from './Home'
 import {Routes, Route, useLocation} from 'react-router-dom'
 import { CarFinder, FinderContainer, SearchByType, SearchPage,  } from './CarFinder'
 import { CarPage } from './CarPage'
+import { UserPage } from './UserPage'
 
 const ScrollToTop = () => {
   // Extracts pathname property(key) from an object
@@ -31,6 +32,7 @@ function App() {
         <Route path='/search' element={<SearchPage />} />
         <Route path ='/search/:id' element={<SearchByType />} />
         <Route path='/listing/:id' element={<CarPage />} />
+        <Route path='/u/:id' element={<UserPage />} />
       </Routes>
       </div>
     </>
