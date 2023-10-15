@@ -1,0 +1,586 @@
+body {
+    margin: 0px;
+}
+:root {
+    --arrow-bg: rgba(255, 255, 255, 0.3);
+    --arrow-icon: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg);
+    --option-bg: white;
+    --select-bg: rgba(255, 255, 255, 0.2);
+}
+.navbar {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: #0A2647;
+    -webkit-box-shadow: 1px 7px 35px 7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 7px 35px 7px rgba(0,0,0,0.75);
+    box-shadow: 1px 7px 35px 7px rgba(0,0,0,0.75);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    top: 0px;
+}
+.logo {
+    color: #2C74B3;
+    font-family: Gotham;
+    font-weight: 450;
+}
+.navbtt {
+    height: 50px;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbtt h1 {
+    font-family: gotham;
+    color:white;
+    font-size: 20px;
+    font-weight: 100;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    padding: 5px;
+}
+.login {
+    height: 50px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loginbutton {
+    width: 100px;
+    height: 30px;
+    border: 0;
+    border-radius: 15px;
+    background-color: #144272;
+    color: white;
+    font-family: gotham;
+    font-weight: 100;
+    cursor: pointer;
+}
+.container-1 {
+    width: 100%;
+    height: 100%;
+    min-width: 1280px;
+    margin-top: 60px;
+    overflow: hidden;
+}
+.buy-car-background {
+    background-image: url("blueblue.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.buy-info {
+    width: 40rem;
+    height: 36rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.buy-info h1 {
+    color: white;
+    font-family: Gotham;
+    font-size: 56px;
+    text-shadow: 0px 3px 9px rgba(0,0,0,0.81);
+}
+.buy-info h2 {
+    color: grey;
+    font-family: Gotham;
+    text-shadow: 0px 3px 9px rgba(0,0,0,0.81);
+}
+.line {
+    border: 0;
+    height: 1px;
+    width: 40rem;
+    background: #333;
+    background-image: linear-gradient(to right, #000, #222, #000);
+}
+.btt {
+    height: 50px;
+    width: 300px;
+    border: 0px;
+    font-size: 24px;
+    background: rgb(20,66,114);
+    background: radial-gradient(90deg, rgba(20,66,114,1) 0%, rgba(32,93,149,1) 49%, rgba(20,66,114,1) 100%);
+    color: white;
+    border-radius: 15px;
+    font-family: gotham;
+    cursor:pointer;
+}
+.btt:hover {
+    color: grey;
+    background: rgb(20,66,114);
+    background: linear-gradient(90deg, rgba(20,66,114,1) 0%, rgba(32,93,149,1) 49%, rgba(20,66,114,1) 100%);
+    transition: all ease-in 0.3s 0s;
+}
+.sell-car-background {
+    background-image: url("blueblueother.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.line-2 {
+    margin:0px;
+    background-color: grey;
+    border: 5px solid grey
+}
+.info-about {
+    margin: 0px;
+    background-color: #144272;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 5rem
+}
+.info-box {
+    color: white;
+    font-family: gotham;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0px 3px 9px rgba(0,0,0,0.81);
+}
+.info-box p {
+    color: rgb(148, 146, 146);
+    font-size: 20px;
+    font-family: gotham;
+    text-shadow: 0px 3px 9px rgba(0,0,0,0.81);
+}
+.logo-box {
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    /* -webkit-box-shadow: -5px 5px 5px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: -5px 5px 5px 3px rgba(0,0,0,0.75);
+    box-shadow: -5px 5px 5px 3px rgba(0,0,0,0.75); */
+    margin-left: 10px;
+}
+.find-by-type {
+    background-color: #0A2647;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.find-by-type-text {
+    color: white;
+    font-family: gotham;
+    font-weight: 100;
+}
+.type-container {
+    width: 50%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.car-type {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    font-family: Gotham;
+}
+.type-image {
+    width: 60%;
+    height: 50px;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.type-image img {
+    width: 90%
+}
+.car-type h1 {
+    font-size: 16px;
+    text-decoration: none;
+}
+.finder-container {
+    background-image: url('pexels-kelly-2402235.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem
+}
+.finder-text-container {
+    background-color: #0A2647;
+    width: 450px;
+    margin-top: 10px;
+    text-align: center;
+    border: 3px solid black;
+    color: white;
+    font-family: Gotham;
+}
+.finder-container h1 {
+    font-size: 32px;
+    font-family: gotham;
+    color: white;
+}
+.finder {
+    background-color: white;
+    width: 50%;
+    display: flex;
+    border-radius: 15px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.finder-labels {
+    font-family: gotham;
+    margin: 3px;
+    font-size: 18px;
+    color:#0A2647 ;
+}
+.finder select {
+        width: 250px;
+        height: 50px;
+        margin: 3px;
+        border: 0px;
+        border-bottom: 3px solid #144272;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        text-indent: 1px;
+        text-overflow: '';
+        text-align:left;
+        font-size: 16px;
+    
+}
+.finder input[type='number'] {
+    width: 250px;
+    height: 50px;
+    margin: 3px;
+    border: 0;
+    border-bottom: 3px solid #144272;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-size: 16px;
+}
+.finder input[type='number']:focus {
+    outline: none;
+}
+.finder input[type='checkbox'] {
+    display: none;
+}
+.container-form {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap:1rem
+}
+
+.years {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.finder select:focus {
+    outline: none;
+}
+.link  {
+    text-decoration: none;
+}
+.link h1 {
+    text-decoration: none;
+}
+.results-container {
+    background-color: #0A2647;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px
+}
+.results-container h1 {
+    color: white;
+    font-family: gotham;
+}
+.results-container-2 {
+    background-color: white;
+    width: 70%;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
+}
+.toolbar-container {
+    background-color: white;
+    width: 70%;
+    border-radius: 15px;
+}
+.car-tile {
+    width: 30%;
+    height: 500px;
+    aspect-ratio: 1/1;
+    margin: 10px;
+    background-color: #cbd2da;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.car-image {
+    width: 90%;
+    height: 150px;
+    aspect-ratio: 16 / 9;
+    border-radius: 15px;
+    margin: 10px;
+
+}
+.car-image img {
+    width: 100%;
+    border-radius: 15px
+}
+.car-info {
+    width: 90%;
+    margin-top: 10px;
+}
+.car-info h1 {
+    color: #144272;
+    font-family: Gotham;
+}
+.car-info h2 {
+    font-family: Gotham;
+    color: #0A2647
+}
+.car-info h3 {
+    font-family: Gotham;
+    font-size: 12px
+}
+.more-info-btt {
+    position: static;
+    bottom: 10px;
+    right: 10px;
+    width: 150px;
+    height: 50px;
+    background-color: #410b07;
+    border: 0;
+    border-radius: 15px;
+    color: white;
+    font-size: 20px;
+    font-family: Gotham;
+    margin: 5px;
+    cursor: pointer;
+}
+.sorter {
+    width: 150px;
+    height: 30px;
+    margin: 10px;
+    border: 0px;
+    border-bottom: 3px solid #144272;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    text-align:left;
+    font-size: 14px;
+    font-family: gotham;
+    outline: none;
+}
+.type-switcher {
+    height: 48px;
+    margin: 10px;
+    border: 0px;
+    border-bottom: 3px solid #144272;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    text-align:left;
+    font-size: 14px;
+    font-family: gotham;
+    background-color: #0A2647;
+    color: white;
+    outline: none;
+    font-size: 32px;
+}
+.type-switcher-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.type-switcher-text h1 {
+    font-size: 32px;
+}
+#sedan-select, #suv-select, #coupe-select, #hatchback-select, #sport-select {
+    cursor: pointer;
+}
+.container-car-page {
+    background-color: #0A2647;
+    display:flex;
+    justify-content: center;
+    padding: 20px;
+}
+.info-container {
+    background-color: #233b4e;
+    width: 95%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.car-img-container {
+    aspect-ratio: 16/9;
+    width: 45%;
+    margin: 10px;
+    background-color: black;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.car-info-container {
+    width: 50%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.car-title {
+    font-family: gotham;
+    color: white;
+    font-size: 48px;
+    margin: 0;
+}
+.car-info-container h3 {
+    margin: 0px;
+    color:#646262;
+    font-family: gotham;
+    font-weight: 300;
+    font-size: 16px
+}
+.user {
+    display: flex;
+    gap: 5px;
+}
+.car-description {
+    width: 95%;
+    background-color: #0A2647;
+    height: 50%;
+    margin-left: 2.5%;
+    margin-top: 20px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.car-description-title {
+    color: white;
+    font-family: Gotham;
+    font-size: 24px;
+}
+.description-container {
+    width: 95%;
+    height: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.description-pill {
+    background-color: #144272;
+    width: 45%;
+    height: 45%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 3px;
+    overflow: hidden;
+}
+.description-small-title {
+    font-size: 12px;
+    margin: 0;
+    font-family: Gotham;
+    color: rgb(201, 200, 200);
+    font-weight: 100;
+    margin-left: 10px;
+}
+.description-info-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+}
+.description-info-container h1 {
+    margin: 0;
+    font-family: Gotham;
+    font-size: 36px;
+    color: white;
+}
+.description-info-container-price h1 {
+    margin: 0;
+    font-family: Gotham;
+    font-size: 36px;
+    color: white;
+}
+.description-info-container-price {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+}
+.contact-button {
+    width: 40%;
+    height: 15%;
+    background-color: #144272;
+    border: 0;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-family: gotham;
+    cursor: pointer;
+    font-weight: 100;
+    margin-top: 20px;
+    margin-left: calc(98% - 40%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.car-img-img {
+    width: 95%
+}
+.similiar-cars-container {
+    margin-top: 50px;
+    width: 97%;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.similiar-cars-container h1 {
+    color:#0A2647;
+    font-family: gotham;
+}
+.car-tiles-similar {
+    display: flex;
+    width: 70%;
+}
