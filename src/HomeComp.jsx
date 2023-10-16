@@ -6,6 +6,9 @@ import golf from './golf.png'
 import r8 from './r8.png'
 import {motion} from 'framer-motion'
 import { Link, useNavigate } from 'react-router-dom'
+import {BiTimer} from 'react-icons/bi'
+import {TbCurrencyDollarOff} from 'react-icons/tb'
+import {AiOutlineCheck} from 'react-icons/ai'
 
 
 export function BuySection() {
@@ -47,7 +50,7 @@ export function SellSection() {
                 <br />
                 <br />
                 <br />
-                <button className='btt'>List your car now</button>
+                <Link className='link' to='/sell'><button className='btt'>List your car now</button></Link>
             </motion.div>
         </div>)
 }
@@ -140,4 +143,37 @@ export function FindByType() {
         </motion.div>
     </div>
 </div>)
+}
+
+export function WhyChooseUs() {
+    return (<div className='choose-us-container'>
+        <motion.h1 initial={{opacity:0, x:30}}
+            whileInView={{opacity:1, x:0}}>Why choose us?</motion.h1>
+        <div className='choose-us-info-container'>
+            <motion.div className='choose-info'
+            initial={{opacity:0, x:30}}
+            whileInView={{opacity:1, x:0}}
+            whileHover={{scale:1.05, y:-10}}>
+                <BiTimer color={'grey'} size={100}/>
+                <h1>Within minutes</h1>
+                <h3>Find the perfect car for you within minutes through our advanced search system</h3>
+            </motion.div>
+            <motion.div className='choose-info'
+            initial={{opacity:0, x:10}}
+            whileInView={{opacity:1, x:0}}
+            whileHover={{scale:1.05, y:-10}}>
+                <TbCurrencyDollarOff color={'grey'} size={100}/>
+                <h1>No hidden fees</h1>
+                <h3>You only pay what is listed by the seller with no additional fees</h3>
+            </motion.div>
+            <motion.div className='choose-info'
+            initial={{opacity:0, x:10}}
+            whileInView={{opacity:1, x:0}}
+            whileHover={{scale:1.05, y:-10}}>
+                <AiOutlineCheck color={'grey'} size={100}/>
+                <h1>Guaranteed quality</h1>
+                <h3>All cars listed by sellers are inspected by professionals from our team, assuring quality</h3>
+            </motion.div>
+        </div>
+    </div>)
 }

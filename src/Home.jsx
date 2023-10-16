@@ -2,7 +2,7 @@
 import { motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
 import {CarFinder, FinderContainer } from './CarFinder'
-import {BuySection, FindByType, InfoAbout, SellSection} from './HomeComp'
+import {BuySection, FindByType, InfoAbout, SellSection, WhyChooseUs} from './HomeComp'
 
 
 function Home() {
@@ -19,6 +19,7 @@ function Home() {
         <InfoAbout />
         <FindByType />
         <FinderContainer search={search} setSearch={setSearch}/>
+        <WhyChooseUs />
     </div>)
 }
 

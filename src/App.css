@@ -658,3 +658,208 @@ body {
     flex-wrap: wrap;
     justify-content: center;
 }
+.choose-us-container {
+    background-color: #0A2647;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+.choose-us-container h1 {
+    font-family: Gotham;
+    color: white;
+}
+.choose-us-info-container {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.choose-info h1 {
+    font-size: 20px;
+    color: grey
+}
+.choose-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.choose-info h3 {
+    text-wrap: wrap;
+    font-family: Gotham;
+    font-weight: 300;
+    color:#636668;
+    font-size: 18px;
+}
+.footer {
+    background-color: #222;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.quick-links h3 {
+    color: white;
+    font-family: Gotham;
+}
+.quick-links {
+
+}
+.quicklinks {
+    text-decoration: none;
+    color: white;
+    font-family: Gotham;
+    font-size: 18px;
+}
+.dev {
+    color: grey;
+    font-family: Gotham;
+    font-size: 16px;
+    font-weight: 300;
+    text-indent: 10px;
+}
+.dev-area {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.big-footer {
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+}
+.linkaa {
+    text-decoration: none;
+    color: white
+}
+.sell-page-container {
+    background-color: #144272;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+.sell-window {
+    background-color: white;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    border-radius: 15px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.upload-img-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+}
+.upload-img-preview {
+    background-color: black;
+    width: 40%;
+    aspect-ratio: 16/9;
+    border-radius: 15px;
+}
+.upload-img-text h1 {
+    color: #0A2647;
+    font-family: Gotham;
+    font-size: 48px;
+}
+.upload-img-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem
+}
+.upload-img-text button {
+    background-color: #144272;
+    color: white;
+    cursor: pointer;
+    border-radius: 15px;
+    border: 0;
+    width: 40%;
+    aspect-ratio: 5/1;
+    font-family: Gotham;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    transition: background-color 0.3s ease;
+}
+.upload-img-text button:hover {
+    background-color: #0A2647;
+    transition: background-color 0.3s ease;
+}
+.enter-car-info-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.enter-car-info-container h1 {
+    color:#0A2647;
+    font-family: Gotham;
+    font-size: 40px;
+}
+.info-container1 {
+    background-color: #e4dfdf;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 15px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+.form-group {
+    display: flex;
+    gap: 1rem;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+.form-group input {
+    width: 40%;
+    aspect-ratio: 5/1;
+    font-size: 32px;
+    border:0;
+    border-bottom: 5px solid #0A2647;
+    background-color: inherit;
+    outline: none;
+    font-family: Gotham;
+}
+.form-submit-btt-container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.form-submit-btt-container button {
+    background-color: #144272;
+    color: white;
+    cursor: pointer;
+    border-radius: 15px;
+    border: 0;
+    width: 30%;
+    aspect-ratio: 5/1;
+    font-family: Gotham;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    transition: background-color 0.3s ease;
+}
+.form-submit-btt-container button:hover {
+    background-color: #0A2647;
+    transition: background-color 0.3s ease;
+}
